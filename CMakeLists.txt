@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( Opencv_project )
+find_package(OpenCV REQUIRED)
+add_executable(Opencv_project cuda_roi.cpp)
+target_link_libraries(Opencv_project ${OpenCV_LIBS})
